@@ -8,7 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:pocket_erp/main.dart';
+import 'file:///C:/Users/panda/Desktop/Development/Flutter/PocketERP/pocket_erp/lib/route/authorization_route.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

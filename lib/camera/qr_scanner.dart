@@ -3,21 +3,21 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
-import 'package:pocket_erp/main.dart';
+import 'file:///C:/Users/panda/Desktop/Development/Flutter/PocketERP/pocket_erp/lib/route/authorization_route.dart';
 import 'package:vibration/vibration.dart';
 
-void main() => runApp(MaterialApp(home: QRViewExample()));
+void main() => runApp(MaterialApp(home: QRScanner()));
 
-class QRViewExample extends StatefulWidget {
-  const QRViewExample({
+class QRScanner extends StatefulWidget {
+  const QRScanner({
     Key key,
   }) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _QRViewExampleState();
+  State<StatefulWidget> createState() => _QRScannerState();
 }
 
-class _QRViewExampleState extends State<QRViewExample> {
+class _QRScannerState extends State<QRScanner> {
   Barcode result;
   QRViewController controller;
   final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
